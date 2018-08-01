@@ -1,0 +1,9 @@
+//------------------------------------------------
+// iCAN config block
+
+ProcessConfig = iCAN
+{
+   AppTick   = 4
+   CommsTick = 4
+}
+
