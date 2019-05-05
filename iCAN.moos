@@ -1,3 +1,14 @@
+//------------------------------------
+// Antler Configuration block
+ProcessConfig = ANTLER
+{
+	MSBetweenLaunches = 200
+
+	Run = MOOSDB	@ NewConsole = true
+	Run = iCAN		@ NewConsole = false
+	Run = uXMS		@ NewConsole = true
+}
+
 //------------------------------------------------
 // iCAN config block
 
@@ -7,3 +18,10 @@ ProcessConfig = iCAN
    CommsTick = 4
 }
 
+/-------------------------------------
+// uXMS Configuration block
+ProcessConfig = uXMS
+{
+	var = SBUS_Ch1_SCALED, SBUS_Ch4_SCALED
+	var = GPSD_mode, GPSD_latitude, GPSD_longitude, GPSD_speed, GPSD_track
+}
